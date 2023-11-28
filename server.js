@@ -1,6 +1,7 @@
 const http = require('node:http');
 const readFiles = require('./readFiles');
-const soma = require('./sum');
+const sum = require('./sum');
+const appendFiles = require('./writeFiles');
 
 const hostname = '127.0.0.1';
 const port = 3000;
@@ -12,11 +13,10 @@ const server = http.createServer((req, res) => {
     res.end('Hello World\n');
 });
 
-
-console.log(sum(1,1));
 readFiles();
-
-
+// writeFiles();
+appendFiles();
+console.log(sum(1,1));
 
 
 server.listen(port, hostname, () => {
