@@ -1,20 +1,19 @@
 const fs = require('node:fs/promises');
 
 
-async function writeFiles() {
+async function appendFiles() {
     try {
-        const content = 'Escrevendo conteúdo';
-        // await fs.writeFile('/Users/UNITBRASIL RECP-8/Documents/informações.txt', content)
+        const content = 'Adicionando conteúdo 1';
+        // await fs.appendFile('/Users/UNITBRASIL RECP-8/Documents/informações.txt', content)
         await fs.writeFile('/Users/Igreja Adventista/Documents/convite.txt', content)
-        return 'Arquivo escrito com sucesso.';
+        return 'Arquivo adicionado com sucesso.';
     } catch (err) {
         console.error(err);
         throw err;
     }
 }
-  
 
-writeFiles()
+appendFiles()
 .then(result => {
     console.log(result);
 })
@@ -23,4 +22,4 @@ writeFiles()
 });
 
 
-module.exports = writeFiles;
+module.exports = appendFiles;

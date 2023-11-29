@@ -2,7 +2,8 @@ const fs = require('node:fs/promises');
 
 
 function readFiles() {
-    return fs.stat('/Users/UNITBRASIL RECP-8/Documents/informações.txt')
+    // return fs.stat('/Users/UNITBRASIL RECP-8/Documents/informações.txt')
+    return fs.stat('/Users/Igreja Adventista/Documents/informações.txt')
     .then(stats => {
         stats.isFile();
         stats.isDirectory();
