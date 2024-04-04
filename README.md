@@ -1,7 +1,6 @@
-## Nodejs-webserver
+## NodeJS - Webserver
 
-### Hi there
-Project para estudar as funcionalidades do NodeJS
+Projeto para estudar as funcionalidades do NodeJS
 Leitura de apoio: https://nodejs.org/
 
 > [!TIP]
