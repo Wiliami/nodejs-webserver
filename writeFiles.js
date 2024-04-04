@@ -1,12 +1,12 @@
 const fs = require('node:fs/promises');
 
+let content = "Escrevendo arquivo de teste 1.0";
 
 async function writeFiles() {
     try {
-        const content = 'Escrevendo conteúdo';
-        // await fs.writeFile('/Users/UNITBRASIL RECP-8/Documents/informações.txt', content)
-        await fs.writeFile('/Users/Igreja Adventista/Documents/convite.txt', content)
-        return 'Arquivo escrito com sucesso.';
+        await fs.writeFile("/Users/UNITBRASIL RECP-8/Documents/teste.txt", content);
+
+        console.log('Arquivo escrito com sucesso.');
     } catch (err) {
         console.error(err);
         throw err;
@@ -15,12 +15,8 @@ async function writeFiles() {
   
 
 writeFiles()
-.then(result => {
-    console.log(result);
-})
-.catch(err => {
-    console.error(err);
-});
+.then(result => console.log(result))
+.catch(err => console.error(err));
 
 
 module.exports = writeFiles;
