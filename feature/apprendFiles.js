@@ -14,12 +14,8 @@ async function appendFiles() {
 }
 
 appendFiles()
-.then(result => {
-    console.log(result);
-})
-.catch(err => {
-    console.error(err);
-});
+.then(result => console.log(result))
+.catch(err => console.error(err));
 
 
 module.exports = appendFiles;

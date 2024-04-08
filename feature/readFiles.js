@@ -19,12 +19,8 @@ function readFiles() {
 
 
 readFiles()
-.then(result => {
-    console.log(result);
-})
-.catch(err => {
-    console.log(err);
-})
+.then(result => console.log(result))
+.catch(err => console.log(err))
 
 
 module.exports = readFiles;
