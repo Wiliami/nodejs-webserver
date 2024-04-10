@@ -16,4 +16,6 @@ multiplication();
 division();
 
 
-server.listen(port, hostname, () => console.log(`Server running at http://${hostname}:${port}/`));
+server.listen(port, hostname, () => { 
+    console.log(`Server running at http://${hostname}:${port}/`)
+});
