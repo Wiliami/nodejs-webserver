@@ -1,5 +1,7 @@
 const http = require('node:http');
 const sum = require('./math/sum');
+const division = require('./math/division');
+
 
 const hostname = '127.0.0.1';
 const port = 3000;
@@ -12,7 +14,7 @@ const server = http.createServer((req, res) => {
 });
 
 sum(1, 1);
-
+division(1, 1);
 
 server.listen(port, hostname, () => { 
     console.log(`Server running at http://${hostname}:${port}/`)
